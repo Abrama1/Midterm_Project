@@ -40,6 +40,7 @@ while game_is_on:
             or snake.head.ycor() > 280
             or snake.head.ycor() < -280):
         game_is_on = False
+        scoreboard.reset()
         scoreboard.game_over()
 
     # Detect collision with tail.
@@ -48,6 +49,7 @@ while game_is_on:
             pass
         elif snake.head.distance(segment) < 10:
             game_is_on = False
+            scoreboard.reset()
             scoreboard.game_over()
 
 

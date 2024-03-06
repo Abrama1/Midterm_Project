@@ -22,7 +22,6 @@ class Scoreboard(Turtle):
             self.high_score = self.score
         with open("highscore.txt", "w") as data:
             data.write(f"{self.high_score}")
-        self.score = 0
         self.update_scoreboard()
 
     def update_scoreboard(self):
