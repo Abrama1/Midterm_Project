@@ -9,6 +9,7 @@ DOWN = 270
 LEFT = 180
 RIGHT = 0
 
+
 # Define the Snake class.
 class Snake:
 
