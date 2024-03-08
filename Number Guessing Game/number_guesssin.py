@@ -28,7 +28,6 @@ def guessing_game():
     elif difficulty == "hard":
         max_tries = 3
     else:
-        print("Invalid difficulty level. Please choose from easy, normal, or hard.")
         return
     # generate a random number between 1 and 100. player has 10 attempts.
     number_to_guess = random.randint(1, 100)
