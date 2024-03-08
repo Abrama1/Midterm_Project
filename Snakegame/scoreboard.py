@@ -16,7 +16,7 @@ class Scoreboard(Turtle):
         # Initialize attributes to keep track of the current score and high score.
         self.score = 0
         # Open the high score file and read the high score from it.
-        with open("highscore.txt") as data:
+        with open("Snakegame/highscore.txt") as data:
             high_score = data.read()
             self.high_score = int(high_score)  # Convert the read high score to an integer.
 
@@ -34,7 +34,7 @@ class Scoreboard(Turtle):
         if self.score > self.high_score:
             self.high_score = self.score
         # Write the new high score to the high score file.
-        with open("highscore.txt", "w") as data:
+        with open("Snakegame/highscore.txt", "w") as data:
             data.write(f"{self.high_score}")
         self.update_scoreboard()  # Update the scoreboard appearance.
 
